@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Where in The World",
+    "description": "View information about countries using data from the REST Countries API. You can search for countries or filter by region. Click on a country to see more detailed information on a seperate page where you can also click through to border countries. You can also toggle the theme between dark and light mode.",
+    "techUsed": "React, Axios, Styled Components",
+    "liveUrl": "https://srd-whereintheworld.netlify.com/",
+    "codeUrl": "https://github.com/sheriallis/where-in-the-world",
+    "image": "../images/projects/whereintheworld.jpg"
+  },
+  {
+    "title": "Bookmark Landing Page",
+    "description": "This landing page for Bookmark (A simple bookmark manager)  was built using SASS, flexbox, css grid, and JavaScript using a mobile first approach.",
+    "techUsed": "HTML, CSS, JavaScript",
+    "liveUrl": "https://srd-bookmark-landing-page.netlify.com/",
+    "codeUrl": "https://github.com/sheriallis/bookmark-landing-page",
+    "image": "../images/projects/bookmark.jpg"
+  },
+  {
+    "title": "Pomodoro Timer",
+    "description": "The pomodoro technique is a time management method that uses a timer to break down work into intervals, traditionally 25 minutes of work separated by short breaks. With this pomodor timer you can set custom focused work and break time.",
+    "techUsed": "React",
+    "liveUrl": "https://srd-pomodoro-timer.netlify.com/",
+    "codeUrl": "https://github.com/sheriallis/pomodoro-timer",
+    "image": "../images/projects/pomodorotimer.jpg"
+  },
+  {
+    "title": "Markdown Previewer",
+    "description": "Markdown is a lightweight markup language with plain text formatting syntax. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.",
+    "techUsed": "React, marked for parsing",
+    "liveUrl": "https://srd-markdown-previewer.netlify.com/",
+    "codeUrl": "https://github.com/sheriallis/markdown-previewer",
+    "image": "../images/projects/markdownpreviewer.jpg"
+  },
+  {
+    "title": "Clipboard Landing Page",
+    "description": "Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.",
+    "techUsed": "HTML, CSS, SASS",
+    "liveUrl": "https://srd-clipboard-landing-page.netlify.com/",
+    "codeUrl": "https://github.com/sheriallis/clipboard-landing-page",
+    "image": "../images/projects/clipboard.jpg"
+  },
+  {
+    "title": "Weather App",
+    "description": "With this weather app you can lookup weather information. The Apixu API is used to pull in the weather data.",
+    "techUsed": "React",
+    "liveUrl": "https://srd-weather-app.netlify.com/",
+    "codeUrl": "https://github.com/sheriallis/weather-app",
+    "image": "../images/projects/weatherapp.jpg"
+  }
+]
