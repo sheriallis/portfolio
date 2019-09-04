@@ -1,5 +1,11 @@
 import React from "react"
 import styled from "styled-components"
+import {
+  FaGithub,
+  FaDribbble,
+  FaTwitterSquare,
+  FaLinkedin,
+} from "react-icons/fa"
 
 const StyledFooter = styled.footer`
   background-color: #222;
@@ -15,11 +21,39 @@ const StyledFooter = styled.footer`
   }
 `
 
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+`
+
+const SocialMedia = styled.div`
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin: 16px;
+    height: 24px;
+    width: 24px;
+  }
+`
+
 const footer = () => (
   <StyledFooter>
-    Sheri Richardson © {new Date().getFullYear()}, Built with
-    {` `}
-    <a href="https://www.gatsbyjs.org">Gatsby</a>
+    <Wrapper>
+      <div>
+        Sheri Richardson © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      </div>
+      <SocialMedia>
+        <FaLinkedin />
+        <FaTwitterSquare />
+        <FaGithub />
+        <FaDribbble />
+      </SocialMedia>
+    </Wrapper>
   </StyledFooter>
 )
 
