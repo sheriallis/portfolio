@@ -30,13 +30,13 @@ const Logo = styled.img`
 const SiteName = styled.h1``
 
 const HamburgerMenu = styled.img`
-  @media ${breakpoint.large} {
+  @media ${breakpoint.medium} {
     display: none;
   }
 `
 const Nav = styled.nav`
   display: none;
-  @media ${breakpoint.large} {
+  @media ${breakpoint.medium} {
     display: block;
   }
   ul {

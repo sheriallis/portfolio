@@ -1,11 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-
+import breakpoint from "../helpers/breakpoints"
 import Project from "./project"
 
 const Wrapper = styled.div`
-  padding: 80px 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

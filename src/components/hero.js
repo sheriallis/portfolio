@@ -25,18 +25,21 @@ const Emoji = styled.span`
 const Section = styled.section`
   display: flex;
   justify-content: center;
-  height: 700px;
+  padding: 40px 20px;
+
+  @media ${breakpoint.large} {
+    height: 740px;
+  }
 `
 
 const Wrapper = styled.div`
-  /* padding: 60px 20px; */
-  padding: 100px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   @media ${breakpoint.large} {
+    padding: 100px 0;
     flex-direction: row;
     width: 100%;
     max-width: 1200px;
@@ -60,7 +63,6 @@ const HeroText = styled.div`
     }
   }
   @media ${breakpoint.large} {
-    /* width: 400px; */
     margin-right: 160px;
     text-align: justify;
   }
@@ -81,13 +83,13 @@ const hero = () => (
   <Section>
     <Wrapper>
       <HeroText>
-        <h2>Frontend Developer</h2>
+        <h2>Sheri Richardson</h2>
         <p>
           <Emoji role="img" aria-label="Waving hand">
             👋
           </Emoji>{" "}
-          Hi, my name is Sheri Richardson. I am a front end developer with a
-          love for design based in The Netherlands. These are my projects.
+          Hi, my name is Sheri. I am a front end developer with a love for
+          design based in The Netherlands. These are my projects.
         </p>
       </HeroText>
       <ProfileImg src={profileImg1} alt="profile picture with Sheri smiling" />
