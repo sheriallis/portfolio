@@ -6,12 +6,13 @@ import {
   FaTwitterSquare,
   FaLinkedin,
 } from "react-icons/fa"
+import breakpoint from "../helpers/breakpoints"
 
 const StyledFooter = styled.footer`
   background-color: #222;
   color: #fff;
   font-size: 0.8rem;
-  min-height: 150px;
+  min-height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,14 +24,25 @@ const StyledFooter = styled.footer`
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1440px;
+  flex-direction: column;
+
+  @media ${breakpoint.medium} {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+  }
 `
 
 const SocialMedia = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+
+  @media ${breakpoint.medium} {
+    margin-top: 0;
+  }
 
   svg {
     margin: 16px;
