@@ -36,7 +36,7 @@ const ProjectWrapper = styled.div`
     background-color: #e60060;
   }
   &:nth-child(4) {
-    background-color: #1c006d;
+    background-color: #4b84f4;
   }
   &:nth-child(5) {
     background-color: #23272f;
