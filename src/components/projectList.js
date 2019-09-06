@@ -46,7 +46,7 @@ const ProjectList = () => {
   const projects = data.allProjectsJson.edges
 
   return (
-    <Section>
+    <Section id="projects">
       <SectionHeader>Projects</SectionHeader>
       <Wrapper>
         {projects.map(({ node: project }) => {

@@ -50,7 +50,7 @@ const Logo = styled.img`
 `
 
 const About = () => (
-  <Section>
+  <Section id="about">
     <Wrapper>
       <Title>About</Title>
       <AboutText>

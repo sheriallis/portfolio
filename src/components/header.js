@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { FaCode, FaUserAlt, FaEnvelope } from "react-icons/fa"
-
+import { Link } from "gatsby"
 import breakpoint from "../helpers/breakpoints"
 import siteLogo from "../images/logo_dark.svg"
 import HamburgerIcon from "../images/hamburger_icon.svg"
@@ -70,9 +70,9 @@ const Header = () => (
       <Nav>
         <ul>
           <li>
-            <NavItem href="#work">
+            <NavItem href="#projects">
               <FaCode />
-              Work
+              Projects
             </NavItem>
           </li>
           <li>

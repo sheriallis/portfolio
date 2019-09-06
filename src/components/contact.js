@@ -40,7 +40,7 @@ const Form = styled.form`
 `
 
 const Contact = () => (
-  <Section>
+  <Section id="contact">
     <Title>Get in Touch</Title>
     <FormWrapper>
       <Form>
