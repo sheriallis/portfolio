@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { FaCode, FaUserAlt, FaEnvelope } from "react-icons/fa"
-import { Link } from "gatsby"
 import breakpoint from "../helpers/breakpoints"
 import siteLogo from "../images/logo_dark.svg"
 import HamburgerIcon from "../images/hamburger_icon.svg"
@@ -47,7 +46,8 @@ const Nav = styled.nav`
 `
 
 const NavItem = styled.a`
-  padding: 20px;
+  padding: 10px;
+  margin-left: 10px;
   text-decoration: none;
   color: #222222;
   font-weight: 600;
@@ -55,9 +55,29 @@ const NavItem = styled.a`
   align-items: center;
   justify-content: center;
   width: 150px;
+  position: relative;
+
+  &:hover,
+  &:active,
+  &:focus {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 0%;
+    bottom: -20px;
+    left: 0;
+    background-color: #222222;
+    transition: 0.5s;
+  }
 
   svg {
-    margin-right: 16px;
+    margin-right: 10px;
   }
 `
 

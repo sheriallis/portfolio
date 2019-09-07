@@ -100,7 +100,9 @@ const Btn = styled.a`
   margin: 10px 0;
   transition: all 0.3s ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     background-color: ${props =>
       props.primary ? "#ffffff" : "rgba(255,255,255,0.4)"};
     color: ${props => (props.primary ? "#23272f" : "#ffffff")};
