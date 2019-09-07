@@ -1,6 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import styled from "styled-components"
+import PropTypes from "prop-types"
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa"
 import breakpoint from "../helpers/breakpoints"
 
@@ -148,6 +149,15 @@ const Project = ({
       </Info>
     </ProjectWrapper>
   )
+}
+
+Project.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  techUsed: PropTypes.string,
+  liveUrl: PropTypes.string,
+  codeUrl: PropTypes.string,
+  imageData: PropTypes.object,
 }
 
 export default Project
