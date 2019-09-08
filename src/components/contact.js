@@ -36,6 +36,18 @@ const Form = styled.form`
     height: 300px;
   }
   input[type="submit"] {
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0.625rem;
+    transition: background-color 0.2s ease-in;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #5266df;
+    }
   }
 `
 
