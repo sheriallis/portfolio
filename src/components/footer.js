@@ -60,10 +60,18 @@ const footer = () => (
         <a href="https://www.gatsbyjs.org">Gatsby</a>
       </div>
       <SocialMedia>
+        <a href="https://www.linkedin.com/in/sheri-richardson/">
         <FaLinkedin />
+        </a>
+        <a href="https://twitter.com/SheriallisR">
         <FaTwitterSquare />
+        </a>
+        <a href="https://github.com/sheriallis">
         <FaGithub />
+        </a>
+        <a href="https://dribbble.com/sheriallis">
         <FaDribbble />
+        </a>
       </SocialMedia>
     </Wrapper>
   </StyledFooter>
