@@ -19,7 +19,7 @@ const StyledFooter = styled.footer`
 `
 
 const StyledTextLink = styled.a`
-    color: #fff;
+  color: #fff;
   text-decoration: none;
   border-bottom: 4px solid #5266df;
   padding: 6px;
@@ -78,20 +78,20 @@ const footer = () => (
       <div>
         Sheri Richardson © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <StyledTextLink href="https://www.gatsbyjs.org">Gatsby</StyledTextLink>
       </div>
       <SocialMedia>
         <a href="https://www.linkedin.com/in/sheri-richardson/">
-        <FaLinkedin />
+          <FaLinkedin />
         </a>
         <a href="https://twitter.com/SheriallisR">
-        <FaTwitterSquare />
+          <FaTwitterSquare />
         </a>
         <a href="https://github.com/sheriallis">
-        <FaGithub />
+          <FaGithub />
         </a>
         <a href="https://dribbble.com/sheriallis">
-        <FaDribbble />
+          <FaDribbble />
         </a>
       </SocialMedia>
     </Wrapper>
