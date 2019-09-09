@@ -16,9 +16,19 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
+`
 
-  a {
+const StyledTextLink = styled.a`
     color: #fff;
+  text-decoration: none;
+  border-bottom: 4px solid #5266df;
+  padding: 6px;
+  transition: background-color 0.2s ease-in;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #5266df;
   }
 `
 
@@ -42,6 +52,17 @@ const SocialMedia = styled.div`
 
   @media ${breakpoint.medium} {
     margin-top: 0;
+  }
+
+  a {
+    color: #fff;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #5266df;
+      border-radius: 50%;
+    }
   }
 
   svg {
