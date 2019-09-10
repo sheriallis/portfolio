@@ -1,9 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
-import { FaCode, FaUserAlt, FaEnvelope } from "react-icons/fa"
 import breakpoint from "../helpers/breakpoints"
 import siteLogo from "../images/logo_light.svg"
 import HamburgerIcon from "../images/hamburger_icon.svg"
+import Overlay from "./overlay"
 
 const StyledHeader = styled.header`
   display: flex;
@@ -78,33 +78,42 @@ const NavItem = styled.a`
     border-radius: 8px;
     transition: 0.5s;
   }
-
-  svg {
-    margin-right: 10px;
-  }
 `
 
-const Header = () => (
-  <StyledHeader>
-    <Wrapper>
-      <Logo src={siteLogo} alt="site logo" />
-      {/* <SiteName>{siteTitle}</SiteName> */}
-      <HamburgerMenu src={HamburgerIcon} alt="open mobile menu" />
-      <Nav>
-        <ul>
-          <li>
-            <NavItem href="#projects">Projects</NavItem>
-          </li>
-          <li>
-            <NavItem href="#about">About</NavItem>
-          </li>
-          <li>
-            <NavItem href="#contact">Contact</NavItem>
-          </li>
-        </ul>
-      </Nav>
-    </Wrapper>
-  </StyledHeader>
-)
+const Header = () => {
+  const [overlayActive, setOverlayActive] = useState(false)
+
+  if (overlayActive) {
+    return <Overlay setOverlayActive={setOverlayActive} />
+  } else {
+    return (
+      <StyledHeader>
+        <Wrapper>
+          <Logo src={siteLogo} alt="site logo" />
+          {/* <SiteName>{siteTitle}</SiteName> */}
+          <HamburgerMenu
+            src={HamburgerIcon}
+            alt="open mobile menu"
+            onClick={() => setOverlayActive(true)}
+            className="hamburger-icon"
+          />
+          <Nav>
+            <ul>
+              <li>
+                <NavItem href="#projects">Projects</NavItem>
+              </li>
+              <li>
+                <NavItem href="#about">About</NavItem>
+              </li>
+              <li>
+                <NavItem href="#contact">Contact</NavItem>
+              </li>
+            </ul>
+          </Nav>
+        </Wrapper>
+      </StyledHeader>
+    )
+  }
+}
 
 export default Header
