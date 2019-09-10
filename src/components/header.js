@@ -2,14 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import { FaCode, FaUserAlt, FaEnvelope } from "react-icons/fa"
 import breakpoint from "../helpers/breakpoints"
-import siteLogo from "../images/logo_dark.svg"
+import siteLogo from "../images/logo_light.svg"
 import HamburgerIcon from "../images/hamburger_icon.svg"
 
 const StyledHeader = styled.header`
-  background-color: #fdd156;
   display: flex;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 `
 
 const Wrapper = styled.div`
@@ -49,12 +47,7 @@ const NavItem = styled.a`
   padding: 10px;
   margin-left: 10px;
   text-decoration: none;
-  color: #222222;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
+  color: #fff;
   position: relative;
 
   &:hover,
@@ -68,11 +61,21 @@ const NavItem = styled.a`
   &::after {
     content: "";
     position: absolute;
-    height: 8px;
+    height: 6px;
     width: 0%;
     bottom: -20px;
     left: 0;
-    background-color: #222222;
+    background-color: #ff8177;
+    background-image: linear-gradient(
+      to right,
+      #ff8177 0%,
+      #ff867a 0%,
+      #ff8c7f 21%,
+      #f99185 52%,
+      #cf556c 78%,
+      #b12a5b 100%
+    );
+    border-radius: 8px;
     transition: 0.5s;
   }
 
@@ -90,21 +93,13 @@ const Header = () => (
       <Nav>
         <ul>
           <li>
-            <NavItem href="#projects">
-              <FaCode />
-              Projects
-            </NavItem>
+            <NavItem href="#projects">Projects</NavItem>
           </li>
           <li>
-            <NavItem href="#about">
-              <FaUserAlt /> About
-            </NavItem>
+            <NavItem href="#about">About</NavItem>
           </li>
           <li>
-            <NavItem href="#contact">
-              <FaEnvelope />
-              Contact
-            </NavItem>
+            <NavItem href="#contact">Contact</NavItem>
           </li>
         </ul>
       </Nav>

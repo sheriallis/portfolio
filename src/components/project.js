@@ -13,7 +13,16 @@ const Preview = styled.div`
 `
 
 const ProjectWrapper = styled.div`
-  background-color: #23272f;
+  background-color: #b12a5b;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
   color: #fcfcfc;
   width: 90%;
   max-width: 600px;
@@ -29,25 +38,13 @@ const ProjectWrapper = styled.div`
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
-  &:nth-child(2) {
-    background-color: #5266df;
-  }
-
-  &:nth-child(3) {
-    background-color: #e60060;
-  }
-  &:nth-child(4) {
-    background-color: #4b84f4;
-  }
-  &:nth-child(5) {
-    background-color: #23272f;
-  }
-  &:nth-child(6) {
-    background-color: #009688;
+  &:nth-child(even) {
+    background-color: #764ba2;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   }
 
   @media ${breakpoint.large} {
-    /* text-align: justify; */
+    text-align: justify;
     max-width: 1200px;
     padding: 40px;
     grid-gap: 70px;
@@ -82,6 +79,9 @@ const Footer = styled.footer`
   @media ${breakpoint.small} {
     flex-direction: row;
     justify-content: center;
+  }
+  @media ${breakpoint.large} {
+    justify-content: flex-start;
   }
 `
 

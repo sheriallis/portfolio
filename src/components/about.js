@@ -6,7 +6,6 @@ import CssLogo from "../images/logos/css.svg"
 import JavascriptLogo from "../images/logos/javascript.svg"
 import ReactLogo from "../images/logos/react.svg"
 import GulpLogo from "../images/logos/gulp.svg"
-import GithubLogo from "../images/logos/github.svg"
 
 const Section = styled.section`
   display: flex;
@@ -14,8 +13,7 @@ const Section = styled.section`
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  background-color: #fcfcfc;
-  /* text-align: center; */
+  color: #fff;
 `
 
 const Wrapper = styled.div`
@@ -62,10 +60,9 @@ const About = () => (
       <Skills>
         <Logo src={HtmlLogo} />
         <Logo src={CssLogo} />
+        <Logo src={GulpLogo} />
         <Logo src={JavascriptLogo} />
         <Logo src={ReactLogo} />
-        <Logo src={GulpLogo} />
-        <Logo src={GithubLogo} />
       </Skills>
     </Wrapper>
   </Section>

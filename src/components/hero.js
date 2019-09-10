@@ -28,7 +28,7 @@ const Section = styled.section`
   padding: 40px 20px;
 
   @media ${breakpoint.large} {
-    height: 740px;
+    height: 620px;
   }
 `
 

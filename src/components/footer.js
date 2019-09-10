@@ -16,6 +16,9 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media ${breakpoint.medium} {
+    min-height: 120px;
+  }
 `
 
 const StyledTextLink = styled.a`
@@ -35,6 +38,7 @@ const StyledTextLink = styled.a`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 20px;
 
   @media ${breakpoint.medium} {
     flex-direction: row;
@@ -56,12 +60,13 @@ const SocialMedia = styled.div`
 
   a {
     color: #fff;
+    transition: background-color 0.2s ease-in;
+    border-radius: 50%;
 
     &:hover,
     &:active,
     &:focus {
       background-color: #5266df;
-      border-radius: 50%;
     }
   }
 

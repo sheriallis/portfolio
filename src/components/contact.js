@@ -7,6 +7,8 @@ const Section = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #5266df;
+  color: #fff;
 `
 const Title = styled.h2``
 
@@ -20,6 +22,11 @@ const Form = styled.form`
   flex-direction: column;
   padding: 20px;
 
+  label {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
   input,
   select,
   textarea {
@@ -31,22 +38,29 @@ const Form = styled.form`
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    outline: none;
+    border: 3px solid transparent;
+
+    &:focus {
+      border: 3px solid #222;
+    }
   }
   textarea {
     height: 300px;
   }
   input[type="submit"] {
     padding: 20px;
-    background-color: #222;
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     font-weight: 600;
     border-radius: 0.625rem;
     transition: background-color 0.2s ease-in;
+    border: none;
 
     &:hover,
     &:active,
     &:focus {
-      background-color: #5266df;
+      background-color: #222;
     }
   }
 `
