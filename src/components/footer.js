@@ -86,16 +86,28 @@ const footer = () => (
         <StyledTextLink href="https://www.gatsbyjs.org">Gatsby</StyledTextLink>
       </div>
       <SocialMedia>
-        <a href="https://www.linkedin.com/in/sheri-richardson/">
+        <a
+          href="https://www.linkedin.com/in/sheri-richardson/"
+          aria-label="Add me on LinkedIn"
+        >
           <FaLinkedin />
         </a>
-        <a href="https://twitter.com/SheriallisR">
+        <a
+          href="https://twitter.com/SheriallisR"
+          aria-label="Follow me on twitter"
+        >
           <FaTwitterSquare />
         </a>
-        <a href="https://github.com/sheriallis">
+        <a
+          href="https://github.com/sheriallis"
+          aria-label="View my projects on GitHub"
+        >
           <FaGithub />
         </a>
-        <a href="https://dribbble.com/sheriallis">
+        <a
+          href="https://dribbble.com/sheriallis"
+          aria-label="Follow me on Dribbble"
+        >
           <FaDribbble />
         </a>
       </SocialMedia>
