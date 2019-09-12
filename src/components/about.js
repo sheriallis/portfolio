@@ -58,11 +58,11 @@ const About = () => (
         technologies.
       </AboutText>
       <Skills>
-        <Logo src={HtmlLogo} />
-        <Logo src={CssLogo} />
-        <Logo src={GulpLogo} />
-        <Logo src={JavascriptLogo} />
-        <Logo src={ReactLogo} />
+        <Logo src={HtmlLogo} alt="HTML logo" />
+        <Logo src={CssLogo} alt="CSS logo" />
+        <Logo src={GulpLogo} alt="Gulp logo" />
+        <Logo src={JavascriptLogo} alt="JavaScript logo" />
+        <Logo src={ReactLogo} alt="React logo" />
       </Skills>
     </Wrapper>
   </Section>
