@@ -24,8 +24,6 @@ const Logo = styled.img`
   height: 40px;
 `
 
-const SiteName = styled.h1``
-
 const HamburgerMenu = styled.img`
   @media ${breakpoint.medium} {
     display: none;
@@ -63,7 +61,7 @@ const NavItem = styled.a`
     position: absolute;
     height: 6px;
     width: 0%;
-    bottom: -20px;
+    bottom: -10px;
     left: 0;
     background-color: #ff8177;
     background-image: linear-gradient(
@@ -90,7 +88,6 @@ const Header = () => {
       <StyledHeader>
         <Wrapper>
           <Logo src={siteLogo} alt="site logo" />
-          {/* <SiteName>{siteTitle}</SiteName> */}
           <HamburgerMenu
             src={HamburgerIcon}
             alt="open mobile menu"
