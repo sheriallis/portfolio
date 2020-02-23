@@ -38,13 +38,5 @@
     "liveUrl": "https://srd-fylodark.netlify.com/",
     "codeUrl": "https://github.com/sheriallis/fylo-landing-page-dark",
     "image": "../images/projects/fylodark.jpg"
-  },
-  {
-    "title": "Weather App",
-    "description": "With this weather app you can lookup weather information. The Apixu API is used to pull in the weather data.",
-    "techUsed": "React",
-    "liveUrl": "https://srd-weather-app.netlify.com/",
-    "codeUrl": "https://github.com/sheriallis/weather-app",
-    "image": "../images/projects/weatherapp.jpg"
   }
 ]
